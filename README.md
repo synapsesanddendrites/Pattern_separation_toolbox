@@ -1,5 +1,5 @@
 # Pattern_separation_toolbox
-A set of functions allowing for easy access of pattern separation in spike train ensembles. In particular it includes the new information-theoretic measures described in 'Robust and consistent measures of pattern separation based on information theory and demonstrated in the dentate gyrus' (Bird, Cuntz, &amp; Jedlicka, 2022).
+A set of functions allowing for easy analysis of pattern separation in spike train ensembles. In particular it includes the new information-theoretic measures described in 'Robust and consistent measures of pattern separation based on information theory and demonstrated in the dentate gyrus' (Bird, Cuntz, &amp; Jedlicka, 2022).
 
 The toolbox is designed to be simple to use and is centred on the function 'analyse_pattern_separation'. Calling this function on an input spike train pattern and an output spike train pattern will compute common classical measures of pattern separation, such as increased cosine distances or reduced correlations, as well as the new information theoretic measures introduced in the above paper, such as sparsity-weighted mutual information and relative redundancy reduction. 
 
