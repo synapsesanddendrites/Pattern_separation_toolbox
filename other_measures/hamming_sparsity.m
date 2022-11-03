@@ -44,7 +44,7 @@ for ward=1:n_rep
             HDo_mn(ward)=HDo_mn(ward)+HDos(ward,ii,jj)/(n_trial_out*(n_trial_out-1)/2);
         end
     end
-    fr_o(ward)=sum(binned_outputs(:,2,:),'all')/numel(binned_outputs(:,2,:));
+    fr_o(ward)=sum(binned_outputs(:,ward,:),'all')/numel(binned_outputs(:,ward,:));
 end
 
 f1_vec=zeros(n_rep,1);
