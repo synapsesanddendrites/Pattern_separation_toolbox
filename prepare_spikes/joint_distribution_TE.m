@@ -31,7 +31,7 @@ function [joint_distribution,delay_distribution]=joint_distribution_TE(binned_in
         edge_vec=linspace(-0.5,max_input_rate+0.5,max_input_rate+2);
         i_inputs=zeros(n_trial_in,t_len);
         for trial_ind=1:n_trial_in
-            i_inputs(trial_ind,:)=binned_inputs(trial_ind)+1;
+            i_inputs(trial_ind,:)=binned_inputs(trial_ind,:)+1;
         end
         input_distribution=histcounts(binned_inputs(:),edge_vec);
         cd_inputs=reshape(i_inputs,[n_trial_in,1,t_len]);
